@@ -51,21 +51,21 @@
 ## Exercice - Flask
 Objectif : Créer et lancer une application web simple avec Flask à l’aide de Docker.
 
-docker build -t tp-flask .
-docker run -d -p 5000:5000 --name flask_tp tp-flask
+- Création d’une app Flask (app.py, dockerfile et requirement.txt)
+- docker build -t tp-flask .
+- docker run -d -p 5000:5000 --name flask_tp tp-flask
 → Démarre un serveur web accessible sur http://localhost:5000.
-
-Accès navigateur : http://localhost:5000
-Résultat : Hello World from Flask!
 
 ## Exercice - Docker Compose + MongoDB
 Objectif : Déployer une application complexe avec Docker.
 
-- Création d’une app Flask connectée à MongoDB (pymongo)
+- Création d’une app Flask connectée à MongoDB (pymongo) 
 - docker compose up -d --build
 - Vérification : http://localhost:5000 → insertion OK (inserted_id)
 
-Commandes :
+Commandes exécutées :
 docker compose up -d --build
+
 docker compose ps
+
 docker compose down
