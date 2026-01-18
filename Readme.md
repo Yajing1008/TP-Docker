@@ -61,11 +61,15 @@ Objectif : Déployer une application complexe avec Docker.
 
 - Création d’une app Flask connectée à MongoDB (pymongo) 
 - docker compose up -d --build
-- Vérification : http://localhost:5000 → insertion OK (inserted_id)
+- Vérification : docker compose ps
+- Fermeture et nettoyage:docker compose down
 
-Commandes exécutées :
-docker compose up -d --build
+→ Démarre un serveur web accessible sur http://localhost:5000 
 
-docker compose ps
+→ insertion OK (inserted_id)
 
-docker compose down
+
+
+
+
+
